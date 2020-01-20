@@ -9,6 +9,7 @@ import "./../assets/css/Cover/Forms.css";
 
 function Cover(props) {
   const [exampleCards, setExampleCards] = useState(true);
+
   useEffect(() => {
     if (props.stateLogin === true) {
       setExampleCards(false);
@@ -39,7 +40,9 @@ function Cover(props) {
         {props.stateLogin === true && (
           <props.formLogin onClick={props.displayRegister} />
         )}
-        {props.stateFinder === true && <FinderCover />}
+        {props.stateFinder === true && (
+          <FinderCover displayRegister={props.displayRegister} />
+        )}
       </main>
       {exampleCards && (
         <div className="exampleCards">

@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import { useState, useEffect } from "react";
+import { useAuth } from "./Api/auth-requests";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
@@ -11,7 +12,8 @@ import { PopUpCard } from "./PopUpCard";
 
 const useStyles = makeStyles({
   card: {
-    minWidth: 275
+    minWidth: 275,
+    maxWidth: 300
   },
   bullet: {
     display: "inline-block",
@@ -29,7 +31,7 @@ const useStyles = makeStyles({
 export default function SimpleCard(props) {
   const [displayProfessionalPopUp, setDisplayProfessionalPopUp] = useState();
   const classes = useStyles();
-
+  const { isAuthenticated } = useAuth();
   return (
     <>
       {displayProfessionalPopUp && (
@@ -74,15 +76,22 @@ export default function SimpleCard(props) {
             {props.fee}€
           </div>
           <CardActions>
-            <Button
-              size="small"
-              className="buttonPopUp"
-              onClick={() =>
-                setDisplayProfessionalPopUp(!displayProfessionalPopUp)
-              }
-            >
-              Contratar
-            </Button>
+            {isAuthenticated === true && (
+              <Button
+                size="small"
+                className="buttonPopUp"
+                onClick={() =>
+                  setDisplayProfessionalPopUp(!displayProfessionalPopUp)
+                }
+              >
+                Contratar
+              </Button>
+            )}
+            {isAuthenticated === false && (
+              <Button size="small" className="buttonPopUp" disabled={true}>
+                Contratar
+              </Button>
+            )}
 
             <div style={{ display: "flex" }}>
               <h1 style={{ fontSize: "1rem" }}>Valoración: </h1>

@@ -12,9 +12,9 @@ const useStyles = makeStyles({
     maxWidth: 350
   },
   bullet: {
-    display: "inline-block",
+    display: "flex",
     margin: "0 2px",
-    transform: "scale(0.8)"
+    transform: "scale(0.5)"
   },
   title: {
     fontSize: 14
@@ -43,7 +43,7 @@ const CoverCard = props => {
           {props.description}
         </Typography>
       </CardContent>
-      <div style={{ fontSize: "2rem", paddingLeft: "2rem", color: "green" }}>
+      <div style={{ fontSize: "1rem", paddingLeft: "2rem", color: "green" }}>
         {props.fee}€
       </div>
       <CardActions>
@@ -52,7 +52,7 @@ const CoverCard = props => {
         </Button>
 
         <div style={{ display: "flex" }}>
-          <h1 style={{ fontSize: "1rem" }}>Valoración </h1>
+          <h1 style={{ fontSize: ".6rem" }}>Valoración </h1>
           <div> {props.ratingAverage}</div>
           <div>/{props.ratingTotal}</div>
         </div>

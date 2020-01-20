@@ -2,7 +2,22 @@
   margin: 0;
   padding: 0;
 }
+.headerCover {
+  height: 17vh;
+}
+.professionalFinderResult {
+  display: flex;
+  background-color: cornsilk;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
 
+.professionalFinderResult > * {
+  padding: 0.3rem;
+  flex: 1 1 300px;
+}
 .professionalFinderCover {
   margin: 0 auto;
   display: flex;
@@ -13,7 +28,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 4rem;
+  margin-bottom: 2.6rem;
 }
 .professionalFinderCover > div h4 {
   padding: 0.3rem;
@@ -25,7 +40,8 @@
 .mainCover {
   display: flex;
   flex-direction: column;
-  height: 64.2vh;
+  height: fit-content;
+  min-height: 27rem;
 }
 .mainCoverOpacity {
   opacity: 0.5;
@@ -57,9 +73,6 @@
   #ReactBackgroundSlider > figure {
     height: 60vh;
   }
-  .headerCover {
-    height: 85vh;
-  }
 
   .rightIndexPanelCover {
     flex-direction: row;
@@ -74,16 +87,11 @@
     font-size: 0.8rem;
     padding: 0.5rem;
   }
-  .mainCover {
-    max-height: 95.5vh;
-  }
 
   .groupNumbersCover {
     padding: 0.5rem;
   }
-  .HeaderNavRightCover {
-    padding-left: 1rem;
-  }
+
   .standarButton {
     font-size: 0.6rem;
     padding: 0.2rem;
@@ -124,9 +132,6 @@
   #ReactBackgroundSlider > figure {
     height: 500vh;
   }
-  .headerCover {
-    height: 85vh;
-  }
 
   .rightIndexPanelCover {
     flex-direction: row;
@@ -140,9 +145,6 @@
   .buttonPopUp {
     font-size: 0.8rem;
     padding: 0.5rem;
-  }
-  .mainCover {
-    max-height: 93.4vh;
   }
 
   .groupNumbersCover {
@@ -188,17 +190,11 @@
   }
 }
 @media (min-width: 375px) and (min-height: 812px) {
-  .mainCover {
-    max-height: 76.4vh;
-  }
 }
 
 @media (min-width: 413px) {
   #ReactBackgroundSlider > figure {
     height: 70vh;
-  }
-  .headerCover {
-    height: 90%;
   }
 
   .rightIndexPanelCover {
@@ -213,9 +209,6 @@
   .buttonPopUp {
     font-size: 0.8rem;
     padding: 0.5rem;
-  }
-  .mainCover {
-    height: 73.2vh;
   }
 
   .groupNumbersCover {
@@ -257,16 +250,11 @@
   }
 }
 @media (min-width: 632px) {
-  .mainCover {
-    height: 93.2vh;
-  }
 }
+
 @media (min-width: 768px) {
   #ReactBackgroundSlider > figure {
     height: 70vh;
-  }
-  .headerCover {
-    height: 76%;
   }
 
   .rightIndexPanelCover {
@@ -281,9 +269,6 @@
   .buttonPopUp {
     font-size: 0.8rem;
     padding: 0.5rem;
-  }
-  .mainCover {
-    height: 58.2vh;
   }
 
   .groupNumbersCover {
@@ -326,9 +311,6 @@
   #ReactBackgroundSlider > figure {
     height: 70vh;
   }
-  .headerCover {
-    height: 76%;
-  }
 
   .rightIndexPanelCover {
     flex-direction: row;
@@ -342,9 +324,6 @@
   .buttonPopUp {
     font-size: 0.8rem;
     padding: 0.5rem;
-  }
-  .mainCover {
-    height: 92.2vh;
   }
 
   .groupNumbersCover {
@@ -391,9 +370,6 @@
     height: 110vh;
   }
 
-  .headerCover {
-    height: 50vh;
-  }
   .rightIndexPanelCover {
     /* padding-left: 65rem; */
     padding-left: 0rem;
@@ -408,9 +384,6 @@
   .buttonPopUp {
     font-size: 0.8rem;
     padding: 0.5rem;
-  }
-  .mainCover {
-    height: 64.2vh;
   }
 
   .groupNumbersCover {
@@ -451,7 +424,4 @@
   }
 }
 @media (min-width: 1024px) and (min-height: 1366px) {
-  .mainCover {
-    height: 57.2vh;
-  }
 }

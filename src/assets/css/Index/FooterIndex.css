@@ -130,24 +130,3 @@
     padding-bottom: 1rem;
   }
 }
-
-.footerIndexLogin {
-  margin-top: 12.1rem;
-  background-color: #303f9f;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 3.6rem;
-  align-items: center;
-}
-.footerIndexRegister {
-  background-color: #303f9f;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 3.6rem;
-  align-items: center;
-  margin-top: 12.1rem;
-}

@@ -6,7 +6,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
 import "react-datepicker/dist/react-datepicker.css";
 
-function FinderCover() {
+function FinderCover(props) {
   const [allProfessionalsList, setAllProfessionalsList] = useState([]);
   const [cities, setCities] = useState([]);
   const [serverResponse, setServerResponse] = useState([]);
@@ -117,10 +117,13 @@ function FinderCover() {
                 )
                 .then(res => {
                   const result = res.data;
-                  console.log(result);
+                  // console.log(result);
                   setServerResponse(result);
-                  console.log(serverResponse);
-                  console.log(datePicker);
+
+                  props.exampleCardsOff();
+
+                  // console.log(serverResponse);
+                  // console.log(datePicker);
                 });
             } catch (error) {
               console.error(error);
@@ -130,10 +133,11 @@ function FinderCover() {
           Buscar
         </button>
       </form>
-      <div>
+      <div className="professionalFinderResult">
         {serverResponse &&
           serverResponse.map(props => (
             <UserCard
+              displayRegister={props.displayRegister}
               idProfessional={props.idProfessional}
               idCity={props.idCity}
               datePicker={datePicker}
@@ -153,31 +157,3 @@ function FinderCover() {
   );
 }
 export { FinderCover };
-
-// function SelectProfesionalForm(props) {
-//   return (
-//     <div>
-//       <div className="paddingSelecProfesional">
-//         <select className="selectProfesionalForm">
-//           {props.profesion.map(props => (
-//             <option key={props.idProfession} value={props.idProfession}>
-//               {props.Name}
-//             </option>
-//           ))}
-//         </select>
-//       </div>
-//       <div className="paddingSelecProfesional" style={{ paddingTop: ".5rem" }}>
-//         <select className="selectProfesionalForm">
-//           {props.province.map(props => (
-//             <option key={props.idCity} value={props.idCity}>
-//               {props.Name}
-//             </option>
-//           ))}
-//         </select>
-//       </div>
-//       <div className="paddingSelecFee" style={{ paddingTop: ".5rem" }}>
-//         <input className="selectFee" placeholder="€/hora" />
-//       </div>
-//     </div>
-//   );
-// }

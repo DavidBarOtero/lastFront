@@ -7,7 +7,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 14rem;
+  padding-bottom: 2rem;
 }
 .exampleCards {
   display: flex;

@@ -177,6 +177,8 @@ function App(props) {
           exact
           render={props => (
             <FooterIndex
+              stateLogin={openLoginForm}
+              stateRegister={openRegisterForm}
               resetAbout={ResetAbout}
               next={Next}
               previous={Previous}

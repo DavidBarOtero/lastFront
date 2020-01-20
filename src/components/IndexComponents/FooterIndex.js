@@ -4,7 +4,15 @@ import { SocialMedia } from "./../SocialMedia";
 
 function FooterIndex(props) {
   return (
-    <div className="footerIndex">
+    <div
+      className={
+        props.stateLogin === true
+          ? "footerIndexLogin "
+          : props.stateRegister === true
+          ? "footerIndexRegister"
+          : "footerIndex"
+      }
+    >
       <SocialMedia />
       <About
         resetAbout={props.resetAbout}

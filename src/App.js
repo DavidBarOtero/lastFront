@@ -152,8 +152,6 @@ function App(props) {
             <Route path="/index">
               <HeaderIndex />
               <div className="contentIndex">
-                <AsideContentIndex />
-
                 <Route
                   path="/index"
                   exact
@@ -173,7 +171,7 @@ function App(props) {
           </PrivateRoute>
         </Switch>
         <Route
-          path="(/|/index)"
+          path="(/|/index|/index/myevents|/index/Professionalfinder)"
           exact
           render={props => (
             <FooterIndex

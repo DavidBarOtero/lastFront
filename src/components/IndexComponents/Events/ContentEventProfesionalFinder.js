@@ -70,15 +70,10 @@ function ContentEventProfesionalFinder() {
           <select
             onChange={handleChangeCity}
             value={selectedCity}
-            style={{ textAlignLast: "center", minWidth: "11.3rem" }}
             className="selectCity"
           >
             {cities.map(props => (
-              <option
-                key={props.idCity}
-                value={props.idCity}
-                style={{ textAlign: "center" }}
-              >
+              <option key={props.idCity} value={props.idCity}>
                 {props.Name}
               </option>
             ))}
@@ -89,7 +84,6 @@ function ContentEventProfesionalFinder() {
           <select
             value={selectedProfession}
             onChange={handleChangeProfession}
-            style={{ textAlignLast: "center", minWidth: "11.3rem" }}
             className="selectProfession"
           >
             {allProfessionalsList.map(props => (
@@ -105,6 +99,7 @@ function ContentEventProfesionalFinder() {
             selected={datePicker}
             onChange={handleChangeDate}
             dateFormat="yyyy/MM/dd"
+            className="datePicker"
           />
         </div>
 
@@ -132,7 +127,7 @@ function ContentEventProfesionalFinder() {
           Buscar
         </button>
       </form>
-      <div>
+      <div className="professionalFinderResult">
         {serverResponse &&
           serverResponse.map(props => (
             <UserCard

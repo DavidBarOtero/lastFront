@@ -1,18 +1,21 @@
 import React from "react";
-import Logo from "./../../assets/images/logoNicevent.png";
 import "./../../assets/css/Index/HeaderIndex.css";
 import { useAuth } from "./../Api/auth-requests";
+import { Link } from "react-router-dom";
 
 function HeaderIndex(props) {
   const { logout } = useAuth();
   return (
     <header className="headerIndex">
-      <div>
-        <img src={Logo} alt="Logo" className="LogoIndex" />
-      </div>
       <div className="botonesHeader">
+        <Link to="/index/ProfesionalsFinder" className="noLinkDecoration">
+          <button>Buscador</button>
+        </Link>
+        <Link to="/index/MyEvents" className="noLinkDecoration">
+          <button className="standarButton">Reservas</button>
+        </Link>
         <button onClick={logout} className="standarButton">
-          Cerrar Sesión
+          Logout
         </button>
       </div>
     </header>

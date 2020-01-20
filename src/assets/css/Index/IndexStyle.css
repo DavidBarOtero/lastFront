@@ -3,6 +3,23 @@
   font: 18px;
   padding-top: 1.5rem;
 }
+.botonesHeader {
+  align-items: flex-end;
+  margin-left: 68rem;
+}
+.selectProfession,
+.selectCity,
+.datePicker {
+  text-align-last: center;
+  min-width: 20rem;
+  padding: 0.5rem;
+}
+.professionalFinder {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
 
 .contentIndex {
   display: flex;
@@ -13,6 +30,7 @@
 .CreateEvent div {
   display: block;
 }
+
 /* background-color: #ffde22; */
 
 @media (max-width: 361px) {
@@ -31,10 +49,6 @@
     height: 62px;
     margin-left: 1rem;
     padding-bottom: 0.5rem;
-  }
-  .botonesHeader {
-    padding-top: 2.4rem;
-    margin: 0;
   }
 
   .standarButton {
@@ -111,10 +125,6 @@
     margin-left: 1rem;
     padding-bottom: 0.5rem;
   }
-  .botonesHeader {
-    padding-top: 2.4rem;
-    margin: 0;
-  }
 
   .standarButton {
     font-size: 0.6rem;
@@ -189,10 +199,6 @@
     height: 63 px;
     margin-left: 1rem;
     padding-bottom: 0.5rem;
-  }
-  .botonesHeader {
-    padding-top: 2.4rem;
-    margin: 0;
   }
 
   .standarButton {
@@ -271,10 +277,6 @@
     height: 61px;
     margin-left: 1.3rem;
     padding-bottom: 0.7rem;
-  }
-  .botonesHeader {
-    padding-top: 2.1rem;
-    margin: 0;
   }
 
   .standarButton {
@@ -371,9 +373,7 @@
     margin-left: 3rem;
     padding-bottom: 0.7rem;
   }
-  .botonesHeader {
-    padding-top: 3.1rem;
-  }
+
   .standarButton {
     font-size: 1rem;
   }
@@ -396,9 +396,7 @@
     margin-left: 3rem;
     padding-bottom: 0.7rem;
   }
-  .botonesHeader {
-    padding-top: 4rem;
-  }
+
   .standarButton {
     font-size: 1.2rem;
   }
@@ -474,9 +472,7 @@
     margin-left: 3rem;
     padding-bottom: 0.7rem;
   }
-  .botonesHeader {
-    padding-top: 4rem;
-  }
+
   .standarButton {
     font-size: 1.2rem;
   }
@@ -557,9 +553,7 @@
     margin-left: 5rem;
     padding-bottom: 0.3rem;
   }
-  .botonesHeader {
-    padding-top: 2.9rem;
-  }
+
   .standarButton {
     font-size: 1.2rem;
   }

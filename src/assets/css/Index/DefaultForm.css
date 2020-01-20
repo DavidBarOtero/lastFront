@@ -1,0 +1,57 @@
+.defaultForm {
+  padding: 4rem 0rem;
+  border: 2px solid white;
+  width: 20rem;
+  margin: 0 auto;
+  background-image: url("./../images/Cover/slider/1.jpg");
+  background-size: cover;
+}
+
+.defaultForm div {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.defaultForm div input {
+  max-width: 20rem;
+}
+input {
+  padding: 0.3rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.defaultFormButtonSubmit {
+  margin: 0 auto;
+  border: black;
+  max-width: fit-content;
+  background-color: #176dcb;
+}
+.has-error {
+  border: 2px solid red;
+}
+.ok {
+  border: 2px solid green;
+}
+label {
+  color: white;
+}
+.selectProfesionalForm {
+  padding: 0.3rem;
+  margin: 0 auto;
+  width: 13.2rem;
+  text-align-last: center;
+}
+
+@media (max-width: 672px) {
+  .selectProfesionalForm {
+    max-width: 10.5rem;
+  }
+}

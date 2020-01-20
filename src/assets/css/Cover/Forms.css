@@ -1,0 +1,45 @@
+@media (min-width: 320px) {
+  .makeStyles-avatar-300 {
+    margin-top: 0px;
+  }
+  .MuiFormControl-marginNormal {
+    margin-bottom: 8px;
+  }
+  .makeStyles-form-301 {
+    width: 100%;
+  }
+  .MuiFormControl-marginNormal {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .makeStyles-avatar-300 {
+    margin: 0px;
+  }
+  .MuiOutlinedInput-input {
+    padding: 10.5px 6px;
+  }
+  .makeStyles-paper-299 {
+    margin-top: 0px;
+  }
+  .MuiBox-root-303 {
+    margin-top: 1px;
+  }
+  .MuiContainer-maxWidthXs .makeStyles-paper-344 {
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MuiContainer-maxWidthXs div .makeStyles-paper-299 {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1265px) {
+  .makeStyles-paper-1 {
+    margin-top: 0px;
+  }
+}

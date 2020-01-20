@@ -1,0 +1,12 @@
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialMedia a > img {
+  height: 2rem;
+  width: 5rem;
+  margin-top: 0.5rem;
+}

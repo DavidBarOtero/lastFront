@@ -1,0 +1,40 @@
+.nextEvent {
+  justify-content: center;
+  display: flex;
+  height: min-content;
+  margin-right: 29rem;
+  background-color: #25b999;
+  border: 1px solid black;
+  width: 15rem;
+}
+.pastEvent {
+  justify-content: center;
+  display: flex;
+  height: min-content;
+  margin-right: 29rem;
+  background-color: grey;
+  border: 1px solid black;
+  width: 15rem;
+}
+.todayEvent {
+  justify-content: center;
+  display: flex;
+  height: min-content;
+  margin-right: 29rem;
+  background-color: gold;
+  border: 1px solid black;
+  width: 15rem;
+}
+
+.eventCardContainer > div {
+  padding: 0.2rem;
+}
+.ratingDateContainer {
+  display: none;
+}
+.eventCardHeader > div {
+  padding: 0.2rem;
+}
+.eventCardContainer h2 {
+  color: rgb(250, 224, 32);
+}

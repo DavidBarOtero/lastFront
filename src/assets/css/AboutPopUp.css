@@ -1,0 +1,77 @@
+.aboutPopUp {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: auto;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.paddingButtonPopUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding-top: 0.5rem;
+}
+.aboutPopUp:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.aboutPopUp a {
+  font-size: 40px;
+  color: #97bf2e;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  height: max-content;
+  font-size: 40px;
+
+  color: white;
+}
+
+.next {
+  font-size: 40px;
+  color: white;
+}
+@media (min-width: 320px) {
+  .aboutPopUp h1 {
+    font-size: 1.3rem;
+  }
+  .aboutPopUp p {
+    font-size: 1rem;
+  }
+  .aboutPopUp .buttonPopUp {
+    font-size: 1rem;
+  }
+  .aboutPopUp {
+    width: 15rem;
+  }
+}
+@media (min-width: 768px) {
+  .aboutPopUp h1 {
+    font-size: 1.8rem;
+  }
+  .aboutPopUp p {
+    font-size: 1rem;
+  }
+  .aboutPopUp .buttonPopUp {
+    font-size: 1.2rem;
+  }
+  .aboutPopUp {
+    width: 22rem;
+  }
+}

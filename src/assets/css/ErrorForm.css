@@ -1,0 +1,7 @@
+.form-message.invalid {
+  color: red;
+}
+
+.form-message.valid {
+  color: rgb(7, 211, 7);
+}

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.standarButton:hover {
+  color: #ffcd00;
+}
+
+.standarButton {
+  border: 1px solid white;
+  background: none;
+  outline: 0;
+  height: max-content;
+  padding: 0.3rem;
+  border-radius: 5%;
+  align-items: center;
+}
+.botonesHeader {
+  justify-content: space-evenly;
+}
+.defaultFormButtonSubmit {
+  margin: 0 auto;
+  border: black;
+  max-width: fit-content;
+  background-color: #176dcb;
+}
+
+.defaultFormButtonSubmit:hover {
+  background-color: #007bff;
+}
+
+.menuBottom {
+  margin: 0 auto;
+  border: black;
+}
+.buttonPopUp {
+  background-color: #004a7f;
+  -webkit-border-radius: 10px;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.AboutP {
+  color: white;
+  padding-top: 1rem;
+}
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #97bf2d;
+    -webkit-box-shadow: 0 0 3px #97bf2d;
+  }
+  50% {
+    background-color: #97bf2d;
+    -webkit-box-shadow: 0 0 40px #97bf2d;
+  }
+  100% {
+    background-color: #97bf2d;
+    -webkit-box-shadow: 0 0 3px #97bf2d;
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: #97bf2d;
+    -moz-box-shadow: 0 0 3px #97bf2d;
+  }
+  50% {
+    background-color: #97bf2d;
+    -moz-box-shadow: 0 0 40px #97bf2d;
+  }
+  100% {
+    background-color: #97bf2d;
+    -moz-box-shadow: 0 0 3px #97bf2d;
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: #97bf2d;
+    box-shadow: 0 0 3px #97bf2d;
+  }
+  50% {
+    background-color: #97bf2d;
+    box-shadow: 0 0 40px #97bf2d;
+  }
+  100% {
+    background-color: #97bf2d;
+    box-shadow: 0 0 3px #97bf2d;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #97bf2d;
+    box-shadow: 0 0 3px #97bf2d;
+  }
+  50% {
+    background-color: #97bf2d;
+    box-shadow: 0 0 40px #97bf2d;
+  }
+  100% {
+    background-color: #97bf2d;
+    box-shadow: 0 0 3px #97bf2d;
+  }
+}
+
+.buttonPopUp {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+/*S5*/

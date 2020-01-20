@@ -1,0 +1,54 @@
+.CreateEvent {
+  border: 2px solid white;
+  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  height: max-content;
+  border-radius: 20px;
+  padding: 1rem;
+  background-image: url("./../../images/Cover/slider/2.jpg");
+  background-size: cover;
+}
+.CreateEvent div {
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.formEventsInput,
+textarea {
+  text-align: center;
+}
+
+.has-error {
+  border: 2px solid red;
+}
+.ok {
+  border: 2px solid green;
+}
+label {
+  color: #666;
+  font-size: 1rem;
+  padding: 0.5rem;
+
+  color: #666;
+}
+
+textarea {
+  padding: 0.5rem;
+  max-width: 300px;
+  max-height: 120px;
+  min-width: 300px;
+  min-height: 39px;
+  margin-left: 3rem;
+}
+label:hover {
+  color: #ffcd00;
+}
+.CreateEvent input {
+  width: 300px;
+}
+/* .CreateEvent div input {
+  justify-self: center;
+} */

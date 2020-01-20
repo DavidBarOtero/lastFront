@@ -1,0 +1,152 @@
+.asideContentIndex {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+
+  margin-top: 1rem;
+}
+.noLinkDecoration {
+  text-decoration: none;
+}
+.buttonsDisplayedDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonEventAside {
+  cursor: pointer;
+  background-image: url("./../../images/Index/calendar.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.buttonProfesionalAside {
+  cursor: pointer;
+  background-image: url("./../../images/Index/target.png");
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.buttonPaidAside {
+  cursor: pointer;
+  background-image: url("./../../images/Index/laptop.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.buttonEventAside,
+.buttonProfesionalAside,
+.buttonPaidAside {
+  font-size: 1rem;
+  height: max-content;
+  width: 10rem;
+  background-color: #1c77ac;
+}
+.buttonEventAside,
+.buttonProfesionalAside,
+.buttonPaidAside {
+  letter-spacing: 0;
+}
+
+.buttonEventAside:after,
+.buttonEventAside:before {
+  backface-visibility: hidden;
+  border: 1px solid #1c77ac;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.buttonEventAside:hover:after,
+.buttonEventAside:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 38%;
+}
+
+.buttonsHideAside {
+  font-size: 18px;
+  height: max-content;
+  width: 10rem;
+  background-color: #539bff;
+}
+.buttonsHideAside:hover {
+  color: black;
+  background-color: #1e7bff;
+}
+
+.buttonPaidAside:after,
+.buttonPaidAside:before {
+  backface-visibility: hidden;
+  border: 1px solid #076eff;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.buttonPaidAside:hover:after,
+.buttonPaidAside:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 32%;
+}
+
+.buttonPaidAside:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 32%;
+}
+
+.buttonProfesionalAside:after,
+.buttonProfesionalAside:before {
+  backface-visibility: hidden;
+  border: 1px solid #076eff;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.buttonProfesionalAside:hover:after,
+.buttonProfesionalAside:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 65%;
+}
+
+.buttonProfesionalAside:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 65%;
+}
+
+@media (max-width: 320px) and (max-height: 568px) {
+  .buttonEventAside,
+  .buttonProfesionalAside,
+  .buttonPaidAside,
+  .buttonsHideAside {
+    font-size: 1rem;
+
+    background-image: none;
+    text-align: center;
+    width: 6.4rem;
+  }
+  .asideContentIndex {
+    margin: 0;
+  }
+}

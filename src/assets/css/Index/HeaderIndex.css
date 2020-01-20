@@ -1,0 +1,39 @@
+.headerIndex {
+  /* background-image: url("./../../images/Cover/slider/1.jpg"); */
+  display: flex;
+  background-color: #303f9f;
+  flex-direction: row;
+  background-size: cover;
+  height: 5rem;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.2rem;
+}
+
+.LogoIndex {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  padding-bottom: 0.5rem;
+}
+
+.botonesHeader {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+}
+
+.sinBordeCover {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  outline: 0;
+  padding: 0.5rem;
+  border-radius: 5%;
+  border: 1px solid white;
+  color: white;
+}

@@ -1,0 +1,19 @@
+.contentIndex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 78vh;
+}
+
+.finders > * {
+  padding: 0.5rem;
+}
+
+p {
+  text-align: center;
+}
+h1 {
+  margin: 15px;
+  text-align: center;
+}

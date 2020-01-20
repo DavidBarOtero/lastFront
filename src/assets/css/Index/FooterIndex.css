@@ -1,0 +1,132 @@
+.footerIndex {
+  background-color: #303f9f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 3.6rem;
+  align-items: center;
+}
+
+.footerIndex > img:hover {
+  max-width: 2.8rem;
+}
+.AboutP {
+  background-color: ;
+
+  cursor: pointer;
+}
+
+.footerIndex > p:hover {
+  color: #ffcd00;
+}
+
+@media (min-width: 360px) and (min-height: 640px) {
+  .AboutP {
+    font-size: 9.6px;
+    padding-bottom: 1rem;
+  }
+  .footerIndex {
+    height: 2.8rem;
+  }
+  .socialMedia a > img {
+    height: 1rem;
+    width: 1.3rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (max-width: 321px) and (min-height: 568px) {
+  .AboutP {
+    font-size: 8.6px;
+    padding-bottom: 1rem;
+  }
+
+  .footerIndex {
+    display: none;
+    height: 2.2rem;
+  }
+  .socialMedia a > img {
+    height: 1rem;
+    width: 1.3rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (min-width: 414px) and (min-height: 736px) {
+  .AboutP {
+    font-size: 9.6px;
+    padding-bottom: 1rem;
+  }
+  .footerIndex {
+    margin-top: 9rem;
+    height: 3.8rem;
+  }
+  .socialMedia a > img {
+    height: 1.3rem;
+    width: 1.6rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (min-width: 375px) and (min-height: 812px) {
+  .AboutP {
+    font-size: 0.6rem;
+    padding-bottom: 1rem;
+  }
+  .footerIndex {
+    margin-top: 9rem;
+    height: 3rem;
+  }
+  .socialMedia a > img {
+    height: 1rem;
+    width: 1.3rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (min-width: 617px) {
+  .AboutP {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+  }
+  .footerIndex {
+    height: 3rem;
+  }
+  .socialMedia a > img {
+    height: 2rem;
+    width: 2.3rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (min-width: 768px) and (min-height: 1024px) {
+  .AboutP {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .footerIndex {
+    margin-top: 22rem;
+    height: 5rem;
+  }
+  .socialMedia a > img {
+    height: 2rem;
+    width: 2.3rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .AboutP {
+    font-size: 25px;
+    padding-bottom: 1rem;
+  }
+  .footerIndex {
+    height: 5rem;
+  }
+  .socialMedia a > img {
+    height: 3rem;
+    width: 4.3rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (min-width: 1265px) {
+  .AboutP {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+}

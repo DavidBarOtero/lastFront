@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.professionalFinderCover {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 14rem;
+}
+.exampleCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+.professionalFinderCover > div h4 {
+  padding: 0.3rem;
+  text-align: center;
+}
+.professionalFinderCover > div {
+  padding: 0.2rem;
+}
+.mainCover {
+  display: flex;
+  flex-direction: column;
+  height: 64.2vh;
+}
+.mainCoverOpacity {
+  opacity: 0.5;
+}
+.containerCover ul li {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+.selectCityCover {
+  text-align-last: center;
+  min-width: 25rem;
+  padding: 0.5rem;
+}
+.selectProfessionCover {
+  min-width: 25rem;
+  padding: 0.5rem;
+  text-align-last: center;
+}
+.dataPickerCover {
+  padding: 0.5rem;
+  min-width: 25rem;
+  text-align-last: center;
+}
+#ReactBackgroundSlider > figure {
+  max-height: 100vh;
+}
+/*iphone 5*/
+@media (min-width: 320px) {
+  #ReactBackgroundSlider > figure {
+    height: 60vh;
+  }
+  .headerCover {
+    height: 85vh;
+  }
+
+  .rightIndexPanelCover {
+    flex-direction: row;
+  }
+  .aboutPopUp {
+    width: 15rem;
+  }
+  .aboutPopUp > p {
+    font-size: 0.8rem;
+  }
+  .buttonPopUp {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .mainCover {
+    max-height: 95.5vh;
+  }
+
+  .groupNumbersCover {
+    padding: 0.5rem;
+  }
+  .HeaderNavRightCover {
+    padding-left: 1rem;
+  }
+  .standarButton {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+  .LogoCover {
+    margin-right: 0;
+    max-width: 75px;
+    max-height: 75px;
+    margin-left: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .standarButton {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+  .contentPCover {
+    font-size: 0.8rem;
+  }
+  .contentNumbersCover {
+    max-height: 40px;
+  }
+  .contentCover {
+    display: none;
+  }
+  .contentRatingPCover {
+    padding: 0;
+    font-size: 0.6rem;
+  }
+
+  .displayRegister {
+    font-size: 1rem;
+  }
+  .containerCover ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 360px) {
+  #ReactBackgroundSlider > figure {
+    height: 500vh;
+  }
+  .headerCover {
+    height: 85vh;
+  }
+
+  .rightIndexPanelCover {
+    flex-direction: row;
+  }
+  .aboutPopUp {
+    width: 15rem;
+  }
+  .aboutPopUp > p {
+    font-size: 0.8rem;
+  }
+  .buttonPopUp {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .mainCover {
+    max-height: 93.4vh;
+  }
+
+  .groupNumbersCover {
+    padding: 0.5rem;
+  }
+  .HeaderNavRightCover {
+    padding-left: 1rem;
+  }
+  .standarButton {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+  .LogoCover {
+    margin-right: 0;
+    max-width: 90px;
+    max-height: 90px;
+    margin-left: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .standarButton {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+  .contentCover {
+    display: none;
+  }
+  .contentPCover {
+    font-size: 0.8rem;
+  }
+  .contentNumbersCover {
+    max-height: 40px;
+  }
+  .contentRatingPCover {
+    padding: 0;
+    font-size: 0.6rem;
+  }
+
+  .displayRegister {
+    font-size: 1rem;
+  }
+  .containerCover ul li {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 375px) and (min-height: 812px) {
+  .mainCover {
+    max-height: 76.4vh;
+  }
+}
+
+@media (min-width: 413px) {
+  #ReactBackgroundSlider > figure {
+    height: 70vh;
+  }
+  .headerCover {
+    height: 90%;
+  }
+
+  .rightIndexPanelCover {
+    flex-direction: row;
+  }
+  .aboutPopUp {
+    width: 15rem;
+  }
+  .aboutPopUp > p {
+    font-size: 0.8rem;
+  }
+  .buttonPopUp {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .mainCover {
+    height: 73.2vh;
+  }
+
+  .groupNumbersCover {
+    padding: 0.5rem;
+  }
+  .HeaderNavRightCover {
+    padding-left: 1rem;
+  }
+  .standarButton {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+  .LogoCover {
+    margin-right: 0;
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .contentCover {
+    display: none;
+  }
+  .contentPCover {
+    font-size: 0.8rem;
+  }
+  .contentNumbersCover {
+    max-height: 40px;
+  }
+  .contentRatingPCover {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .displayRegister {
+    font-size: 1rem;
+  }
+  .containerCover ul li {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 632px) {
+  .mainCover {
+    height: 93.2vh;
+  }
+}
+@media (min-width: 768px) {
+  #ReactBackgroundSlider > figure {
+    height: 70vh;
+  }
+  .headerCover {
+    height: 76%;
+  }
+
+  .rightIndexPanelCover {
+    flex-direction: row;
+  }
+  .aboutPopUp {
+    width: 15rem;
+  }
+  .aboutPopUp > p {
+    font-size: 0.8rem;
+  }
+  .buttonPopUp {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .mainCover {
+    height: 58.2vh;
+  }
+
+  .groupNumbersCover {
+    padding: 0.5rem;
+  }
+  .groupNumbersCover > p {
+    font-size: 1.2rem;
+  }
+  .HeaderNavRightCover {
+    padding-left: 1rem;
+  }
+  .standarButton {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+  .LogoCover {
+    margin-right: 0;
+    max-width: 140px;
+    max-height: 140px;
+    margin-left: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contentPCover {
+    font-size: 0.8rem;
+  }
+  .contentNumbersCover {
+    max-height: 60px;
+  }
+  .contentRatingPCover {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+.containerCover ul li {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1024px) {
+  #ReactBackgroundSlider > figure {
+    height: 70vh;
+  }
+  .headerCover {
+    height: 76%;
+  }
+
+  .rightIndexPanelCover {
+    flex-direction: row;
+  }
+  .aboutPopUp {
+    width: 15rem;
+  }
+  .aboutPopUp > p {
+    font-size: 0.8rem;
+  }
+  .buttonPopUp {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .mainCover {
+    height: 92.2vh;
+  }
+
+  .groupNumbersCover {
+    padding: 0.5rem;
+  }
+  .groupNumbersCover > p {
+    font-size: 1.2rem;
+  }
+  .HeaderNavRightCover {
+    padding-left: 1rem;
+  }
+  .standarButton {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+  .LogoCover {
+    margin-right: 0;
+    max-width: 170px;
+    max-height: 170px;
+
+    padding-bottom: 0.5rem;
+  }
+
+  .contentPCover {
+    font-size: 0.8rem;
+  }
+  .contentNumbersCover {
+    max-height: 61px;
+  }
+  .contentRatingPCover {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .displayRegister {
+    font-size: 1rem;
+  }
+  .containerCover ul li {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1264px) and (max-height: 1200px) {
+  #ReactBackgroundSlider > figure {
+    height: 110vh;
+  }
+
+  .headerCover {
+    height: 50vh;
+  }
+  .rightIndexPanelCover {
+    /* padding-left: 65rem; */
+    padding-left: 0rem;
+    flex-direction: row;
+  }
+  .aboutPopUp {
+    width: 15rem;
+  }
+  .aboutPopUp > p {
+    font-size: 0.8rem;
+  }
+  .buttonPopUp {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .mainCover {
+    height: 64.2vh;
+  }
+
+  .groupNumbersCover {
+    padding: 0.5rem;
+  }
+  .groupNumbersCover > p {
+    font-size: 1.5rem;
+  }
+  .rightIndexPanelCover {
+    display: flex;
+    padding-left: 64rem;
+    flex-direction: row;
+    position: absolute;
+  }
+  .standarButton {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+  .LogoCover {
+    margin: 0 auto;
+    max-width: 170px;
+    max-height: 170px;
+  }
+
+  .contentNumbersCover {
+    max-height: 80px;
+  }
+  .contentRatingPCover {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .displayRegister {
+    font-size: 1rem;
+  }
+  .containerCover ul li {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .mainCover {
+    height: 57.2vh;
+  }
+}

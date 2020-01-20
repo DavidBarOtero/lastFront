@@ -1,0 +1,6 @@
+.rightIndexPanelCover {
+  display: flex;
+  padding-left: 64rem;
+  flex-direction: row;
+  position: absolute;
+}

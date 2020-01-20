@@ -1,0 +1,28 @@
+.displayRegister {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #c2ddf8;
+  color: white;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.displayRegister div {
+  display: flex;
+  flex-direction: column;
+}
+.buttonAndSelect {
+  padding: 0.5rem;
+}
+
+.displayRegister label {
+  color: #666;
+  font-size: 1rem;
+  padding: 0.5rem;
+}

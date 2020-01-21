@@ -5,7 +5,7 @@
 }
 .botonesHeader {
   align-items: flex-end;
-  margin-left: 68rem;
+  margin-left: 64rem;
 }
 .selectProfession,
 .selectCity,
@@ -23,14 +23,16 @@
 
 .contentIndex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
 }
 .CreateEvent div {
   display: block;
 }
-
+.inputCreditCard {
+  text-align: center;
+}
 /* background-color: #ffde22; */
 
 @media (max-width: 361px) {

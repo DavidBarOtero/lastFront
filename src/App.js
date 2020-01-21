@@ -162,7 +162,7 @@ function App(props) {
                 <Route path="/index/Card" exact component={UserCard} />
 
                 <Route
-                  path="/index/ProfesionalsFinder"
+                  path="/index/ProfessionalsFinder"
                   exact
                   component={ContentEventProfesionalFinder}
                 />
@@ -171,7 +171,7 @@ function App(props) {
           </PrivateRoute>
         </Switch>
         <Route
-          path="(/|/index|/index/myevents|/index/Professionalfinder)"
+          path="(/|/index|/index/myevents|/index/ProfessionalsFinder)"
           exact
           render={props => (
             <FooterIndex

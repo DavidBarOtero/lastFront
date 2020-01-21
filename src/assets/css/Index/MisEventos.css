@@ -1,40 +1,31 @@
-.nextEvent {
-  justify-content: center;
-  display: flex;
-  height: min-content;
-  margin-right: 29rem;
-  background-color: #25b999;
-  border: 1px solid black;
-  width: 15rem;
+.containerMyEvents {
+  padding-top: 1rem;
+  margin: 0 auto;
 }
-.pastEvent {
-  justify-content: center;
-  display: flex;
-  height: min-content;
-  margin-right: 29rem;
-  background-color: grey;
-  border: 1px solid black;
-  width: 15rem;
-}
-.todayEvent {
-  justify-content: center;
-  display: flex;
-  height: min-content;
-  margin-right: 29rem;
-  background-color: gold;
-  border: 1px solid black;
-  width: 15rem;
+.nextEventh {
+  font-size: 1rem;
 }
 
-.eventCardContainer > div {
-  padding: 0.2rem;
+.nextEvent {
+  align-items: baseline;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  height: min-content;
+  margin: 0 auto;
+
+  min-width: 25rem;
+  width: fit-content;
 }
-.ratingDateContainer {
-  display: none;
-}
-.eventCardHeader > div {
-  padding: 0.2rem;
-}
-.eventCardContainer h2 {
-  color: rgb(250, 224, 32);
+.pastEvent {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  min-height: 3rem;
+  width: fit-content;
+  min-width: 25rem;
+  opacity: 0.7;
+  /* background-color: grey; */
 }

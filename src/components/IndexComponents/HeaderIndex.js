@@ -8,10 +8,12 @@ function HeaderIndex(props) {
   return (
     <header className="headerIndex">
       <div className="botonesHeader">
-        <Link to="/index/ProfesionalsFinder" className="noLinkDecoration">
-          <button>Buscador</button>
+        <Link to="/index/ProfessionalsFinder">
+          <button style={{ textDecoration: "none" }} className="standarButton">
+            Buscador
+          </button>
         </Link>
-        <Link to="/index/MyEvents" className="noLinkDecoration">
+        <Link to="/index/MyEvents" style={{ textDecoration: "none" }}>
           <button className="standarButton">Reservas</button>
         </Link>
         <button onClick={logout} className="standarButton">

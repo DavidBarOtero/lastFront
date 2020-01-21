@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import UserCard from "./../../UserCard";
 import DatePicker from "react-datepicker";
-import { useAuth } from "../../Api/auth-requests";
+
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -21,10 +21,6 @@ function ContentEventProfesionalFinder() {
       .then(res => {
         const result = res.data;
         setAllProfessionalsList(result);
-        // console.log(result);
-
-        // console.log([res.data]);
-        // console.log(allProfessionalsList);
       })
       .catch(err => {
         console.error(err);
@@ -150,31 +146,3 @@ function ContentEventProfesionalFinder() {
   );
 }
 export { ContentEventProfesionalFinder };
-
-// function SelectProfesionalForm(props) {
-//   return (
-//     <div>
-//       <div className="paddingSelecProfesional">
-//         <select className="selectProfesionalForm">
-//           {props.profesion.map(props => (
-//             <option key={props.idProfession} value={props.idProfession}>
-//               {props.Name}
-//             </option>
-//           ))}
-//         </select>
-//       </div>
-//       <div className="paddingSelecProfesional" style={{ paddingTop: ".5rem" }}>
-//         <select className="selectProfesionalForm">
-//           {props.province.map(props => (
-//             <option key={props.idCity} value={props.idCity}>
-//               {props.Name}
-//             </option>
-//           ))}
-//         </select>
-//       </div>
-//       <div className="paddingSelecFee" style={{ paddingTop: ".5rem" }}>
-//         <input className="selectFee" placeholder="€/hora" />
-//       </div>
-//     </div>
-//   );
-// }

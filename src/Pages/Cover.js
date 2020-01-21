@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import { useState, useEffect } from "react";
 import { Header } from "../components/CoverComponents/Header/Header";
 import { CoverCard } from "./../components/CoverComponents/CoverCard";
@@ -18,7 +17,7 @@ function Cover(props) {
     } else {
       setExampleCards(true);
     }
-  });
+  }, [props.stateLogin, props.stateRegister]);
   return (
     <>
       <main className="mainCover">

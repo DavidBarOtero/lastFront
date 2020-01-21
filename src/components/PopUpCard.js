@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CreditCard from "./IndexComponents/Events/CreditCard";
 import { useAuth } from "./Api/auth-requests";
 

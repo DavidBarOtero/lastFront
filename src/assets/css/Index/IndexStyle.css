@@ -207,6 +207,10 @@
     min-width: 15rem;
     padding: 0.5rem;
   }
+  .pastEvent > h2 {
+    margin-right: 73px;
+    font-size: 8px;
+  }
 }
 
 @media (min-width: 1280px) {

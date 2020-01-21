@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { Cover } from "./Pages/Cover";
 import { HeaderIndex } from "./components/IndexComponents/HeaderIndex";
 import { FooterIndex } from "./components/IndexComponents/FooterIndex";
-import { AsideContentIndex } from "./components/IndexComponents/AsideContentIndex";
 import { MyEvents } from "./components/IndexComponents/Events/MyEvents";
 import UserCard from "./components/UserCard";
 import { ContentEventProfesionalFinder } from "./components/IndexComponents/Events/ContentEventProfesionalFinder";

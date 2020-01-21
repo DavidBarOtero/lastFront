@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "react-credit-cards";
 import axios from "axios";
 import "react-credit-cards/es/styles-compiled.css";
+import { useHistory } from "react-router-dom";
 export default class CreditCard extends React.Component {
   state = {
     cvc: "",
@@ -34,7 +35,7 @@ export default class CreditCard extends React.Component {
           name={this.state.name}
           number={this.state.number}
         />
-        <form style={{ display: "flex", flexDirection: "column" }}>
+        <form className="creditCard">
           <div>
             <input
               className="inputCreditCard"

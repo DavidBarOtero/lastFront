@@ -29,6 +29,7 @@
   .footerIndex {
     height: 2.8rem;
   }
+
   .socialMedia a > img {
     height: 1rem;
     width: 1.3rem;
@@ -42,7 +43,6 @@
   }
 
   .footerIndex {
-    display: none;
     height: 2.2rem;
   }
   .socialMedia a > img {
@@ -57,6 +57,7 @@
     padding-bottom: 1rem;
   }
   .footerIndex {
+    display: flex;
     margin-top: 9rem;
     height: 3.8rem;
   }
@@ -72,6 +73,7 @@
     padding-bottom: 1rem;
   }
   .footerIndex {
+    display: flex;
     margin-top: 9rem;
     height: 3rem;
   }
@@ -88,6 +90,8 @@
   }
   .footerIndex {
     height: 3rem;
+    display: flex;
+    margin-top: 8.2rem;
   }
   .socialMedia a > img {
     height: 2rem;
@@ -101,13 +105,34 @@
     padding-bottom: 1rem;
   }
   .footerIndex {
-    margin-top: 22rem;
+    display: flex;
+    margin-top: 0rem;
     height: 5rem;
   }
   .socialMedia a > img {
     height: 2rem;
     width: 2.3rem;
     margin-top: 0.3rem;
+  }
+  .mainCover {
+    min-height: 32.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footerIndex {
+    margin-top: 2.2rem;
+  }
+  .makeStyles-paper-1365 {
+    display: flex;
+    margin-top: 35px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .makeStyles-paper-1566 {
+    display: flex;
+    margin-top: 67px;
+    align-items: center;
+    flex-direction: column;
   }
 }
 @media (min-width: 1024px) and (min-height: 1366px) {
@@ -116,6 +141,7 @@
     padding-bottom: 1rem;
   }
   .footerIndex {
+    display: flex;
     height: 5rem;
   }
   .socialMedia a > img {

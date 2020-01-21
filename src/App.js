@@ -10,7 +10,7 @@ import UserCard from "./components/UserCard";
 import { ContentEventProfesionalFinder } from "./components/IndexComponents/Events/ContentEventProfesionalFinder";
 import { FormRegister } from "./components/FormRegister";
 import { FormLogin } from "./components/FormLogin";
-
+import "./assets/css/Cover/CoverStyle.css";
 import { AuthProvider } from "./components/Api/auth-requests";
 import { PrivateRoute } from "./components/Api/PrivateRoute";
 import "./assets/css/ComunCss.css";

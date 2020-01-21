@@ -34,7 +34,8 @@ function AboutCopyright() {
 
 const useStyles = makeStyles(theme => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(13),
+
     display: "flex",
     flexDirection: "column",
     alignItems: "center"
@@ -128,10 +129,6 @@ function FormLogin(props) {
               />
               <Error touched={touched.password} message={errors.password} />
 
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Recordarme"
-              />
               <Button
                 type="button"
                 fullWidth

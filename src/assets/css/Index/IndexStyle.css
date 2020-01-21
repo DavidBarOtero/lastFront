@@ -5,27 +5,37 @@
 }
 .botonesHeader {
   align-items: flex-end;
-  margin-left: 64rem;
+  margin-left: 62rem;
 }
 .selectProfession,
 .selectCity,
 .datePicker {
   text-align-last: center;
-  min-width: 20rem;
+  min-width: 10rem;
   padding: 0.5rem;
 }
 .professionalFinder {
+  width: 25rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+}
+.professionalFinderResult > * {
+  padding-bottom: 1rem;
+  margin-left: 0.7rem;
+  padding: 0.3rem;
+  flex: 1 1 300px;
+}
+.creditCard {
+  display: flex;
+  flex-direction: column;
 }
 
 .contentIndex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
 }
 .CreateEvent div {
   display: block;
@@ -33,578 +43,179 @@
 .inputCreditCard {
   text-align: center;
 }
-/* background-color: #ffde22; */
-
-@media (max-width: 361px) {
-  .contentIndex {
-    display: flex;
-    min-height: 85.5vh;
-    height: fit-content;
+@media (min-width: 360px) {
+  .professionalFinder {
+    width: 18rem;
   }
-  .headerIndex {
-    max-width: 100%;
-    height: 3.8rem;
-    justify-content: space-between;
+  .eventCardDate {
+    margin-left: 10px;
   }
-  .LogoIndex {
-    width: 64px;
-    height: 62px;
-    margin-left: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .standarButton {
-    font-size: 12px;
-    padding: 0.2rem;
-  }
-
-  .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 12px;
-
-    background-image: none;
-    text-align: center;
-    width: 5rem;
-  }
-  .asideContentIndex {
-    margin: 0;
-    padding-top: 0.5rem;
-  }
-  .contentIndex nav > * {
-    padding-top: 0.4rem;
-    font-size: 12px;
-  } /*h1 busqueda profesionales*/
-  .contentIndex nav {
-    margin: 0 auto;
-  } /*contenido profesionalesfinder*/
-  .contentIndex nav .defaultFormButtonSubmit {
+  .botonesHeader {
     margin-left: 0;
-  } /*boton profesionalfinder*/
+  }
+  .pastEvent {
+    padding-right: 3rem;
+    font-size: 10px;
+  }
+  .pastEvent div ul {
+    width: 1rem;
+    justify-content: center;
+  }
 
-  .CreateEvent {
-    height: fit-content;
-    width: 13rem;
+  .containerMyEvents {
+    padding-top: 1rem;
     margin: 0 auto;
-    padding: 0;
+    overflow: hidden;
   }
-  .CreateEvent div {
-    padding: 0rem;
-  }
-  .CreateEvent div input {
-    width: 11rem;
-  }
-  .CreateEvent.buttonPopUp {
-    font-size: 15px;
-  } /*boton crear evento*/
-  textarea {
-    padding: 0.5rem;
-    max-width: 11rem;
-    max-height: 45px;
-    min-width: 11rem;
-    min-height: 39px;
+  .nextEvent {
+    padding-left: 1rem;
+    padding-right: 2rem;
 
-    margin: 14px;
-    text-align: center;
+    font-size: 10px;
+  }
+  .nextEvent > h2 {
+    font-size: 10px;
+  }
+  .nextEvent > h1 {
+    font-size: 10px;
+  }
+  .pastEvent > h2 {
+    margin-right: 20px;
+    font-size: 8px;
   }
 }
-@media (max-width: 321px) {
-  .contentIndex {
-    padding-top: 0.6rem;
-    display: flex;
-    min-height: 84.4vh;
-    height: fit-content;
+@media (min-width: 320px) {
+  .professionalFinder {
+    width: 18rem;
   }
-  .headerIndex {
-    max-width: 100%;
-    height: 3.8rem;
-    justify-content: space-between;
+  .eventCardDate {
+    margin-left: 10px;
   }
-  .LogoIndex {
-    max-width: 75px;
-    max-height: 75px;
-    margin-left: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .standarButton {
-    font-size: 0.6rem;
-    padding: 0.2rem;
-  }
-
-  .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 9.6px;
-
-    background-image: none;
-    text-align: center;
-    width: 4.5rem;
-  }
-  .asideContentIndex {
-    margin: 0;
-    padding-top: 0.5rem;
-  }
-  .contentIndex nav > * {
-    padding-top: 0.4rem;
-    font-size: 12px;
-  } /*h1 busqueda profesionales*/
-  .contentIndex nav {
-    margin: 0 auto;
-  } /*contenido profesionalesfinder*/
-  .contentIndex nav .defaultFormButtonSubmit {
+  .botonesHeader {
     margin-left: 0;
-  } /*boton profesionalfinder*/
-
-  .CreateEvent {
-    width: 13rem;
-    margin: 0 auto;
-    padding: 0;
-    height: fit-content;
   }
-  .CreateEvent div {
-    padding: 0rem;
-  }
-  .CreateEvent div input {
-    width: 11rem;
-  }
-  .CreateEvent.buttonPopUp {
-    font-size: 15px;
-  } /*boton crear evento*/
-  textarea {
-    padding: 0.5rem;
-    max-width: 11rem;
-    max-height: 45px;
-    min-width: 11rem;
-    min-height: 39px;
-
-    margin: 14px;
-    text-align: center;
-  }
-}
-@media (min-width: 374px) {
-  .contentIndex {
-    display: flex;
-    min-height: 84.4vh;
-    height: fit-content;
-    padding-top: 0.6rem;
-  }
-  .headerIndex {
-    max-width: 100%;
-    height: 3.8rem;
-    justify-content: space-between;
-  }
-  .LogoIndex {
-    width: 70px;
-    height: 63 px;
-    margin-left: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .standarButton {
-    font-size: 0.6rem;
-    padding: 0.2rem;
-  }
-
-  .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 9.6px;
-
-    text-align: center;
-    width: 5rem;
-  }
-  .asideContentIndex {
-    margin: 0;
-    padding-top: 0.5rem;
-  }
-  .contentIndex nav > * {
-    padding-top: 0.4rem;
-    font-size: 12px;
-  } /*h1 busqueda profesionales*/
-  .contentIndex nav {
-    margin: 0 auto;
-  } /*contenido profesionalesfinder*/
-  .contentIndex nav .defaultFormButtonSubmit {
-    margin-left: 0;
-  } /*boton profesionalfinder*/
-
-  .CreateEvent {
-    width: 13rem;
-    margin: 0 auto;
-    padding: 0;
-    height: fit-content;
-  }
-  .CreateEvent div {
-    padding: 0rem;
-  }
-  .CreateEvent div input {
-    width: 11rem;
-  }
-  .CreateEvent.buttonPopUp {
-    font-size: 15px;
-  } /*boton crear evento*/
-  textarea {
-    padding: 0.5rem;
-    max-width: 11rem;
-    max-height: 45px;
-    min-width: 11rem;
-    min-height: 39px;
-
-    margin: 14px;
-    text-align: center;
+  .pastEvent {
+    padding-right: 3rem;
+    font-size: 10px;
   }
   .inputCreditCard {
-    min-width: 14rem;
+    height: 2rem;
   }
-}
-
-@media (min-width: 375px) and (min-height: 666px) {
-  .contentIndex {
-    display: flex;
-    min-height: 87.1vh;
-    height: fit-content;
-    padding-top: 0.6rem;
-  }
-  .headerIndex {
-    max-width: 100%;
-    height: 3.5rem;
-    justify-content: space-between;
-  }
-  .LogoIndex {
-    width: 61px;
-    height: 61px;
-    margin-left: 1.3rem;
-    padding-bottom: 0.7rem;
+  .creditCard > button {
+    max-width: 14rem;
+    padding-left: 4rem;
   }
 
-  .standarButton {
-    font-size: 0.8;
-    padding: 0.2rem;
-  }
-
-  .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 0.8rem;
-    height: 2.7rem;
-    text-align: center;
-    width: 7.5rem;
-  }
-  .asideContentIndex {
-    margin: 0;
-    padding-top: 0.5rem;
-  }
-  .contentIndex nav > * {
-    padding-top: 0.4rem;
-    font-size: 12px;
-  } /*h1 busqueda profesionales*/
-  .contentIndex nav {
-    margin: 0 auto;
-  } /*contenido profesionalesfinder*/
-  .contentIndex nav .defaultFormButtonSubmit {
-    margin-left: 0;
-  } /*boton profesionalfinder*/
-
-  .CreateEvent {
-    width: 13rem;
-    margin-left: 2.5rem;
-    padding: 0;
-    height: fit-content;
-  }
-  .CreateEvent div {
-    padding: 0rem;
-  }
-  .CreateEvent div input {
-    width: 11rem;
-  }
-  .CreateEvent .buttonPopUp {
-    font-size: 15px;
-  } /*boton crear evento*/
-  textarea {
-    padding: 0.5rem;
-    max-width: 11rem;
-    max-height: 45px;
-    min-width: 11rem;
-    min-height: 39px;
-
-    margin: 14px;
-    text-align: center;
-  }
-}
-@media (min-width: 414px) {
-  .contentIndex {
-    display: flex;
-    min-height: 86.3vh;
-    height: fit-content;
-  }
-  .CreateEvent {
-    width: 13rem;
-    margin-left: 4rem;
-    padding: 0;
-    height: fit-content;
-  }
-  .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 1rem;
-    height: 2.8rem;
-    background-size: contain;
-
-    text-align: center;
-    width: 8rem;
-  }
-}
-@media (min-width: 617px) {
-  .contentIndex {
-    min-height: 136.5vh;
-    height: fit-content;
-  }
-  .headerIndex {
-    max-width: 100%;
-    height: 3rem;
-  }
-  .LogoIndex {
-    width: 90px;
-    height: 90px;
-    margin-left: 3rem;
-    padding-bottom: 0.7rem;
-  }
-
-  .standarButton {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .contentIndex {
-    display: flex;
-    min-height: 85vh;
-    height: fit-content;
+  .containerMyEvents {
     padding-top: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
   }
-  .headerIndex {
-    max-width: 100%;
-    height: 6rem;
-    justify-content: space-between;
+  .nextEvent {
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    font-size: 10px;
   }
-  .LogoIndex {
-    width: 110px;
-    height: 100px;
-    margin-left: 3rem;
-    padding-bottom: 0.7rem;
+  .nextEvent > h2 {
+    font-size: 10px;
+  }
+  .nextEvent > h1 {
+    font-size: 10px;
+  }
+  .pastEvent > h2 {
+    margin-right: 20px;
+    font-size: 9px;
+  }
+  .pastEvent div ul {
+    width: 0rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 414px) {
+  .professionalFinder {
+    width: 18rem;
+  }
+  .eventCardDate {
+    margin-left: 10px;
+  }
+  .botonesHeader {
+    margin-left: 0;
+  }
+  .pastEvent {
+    padding-right: 3rem;
+    font-size: 10px;
+  }
+  .pastEvent div ul {
+    width: 1rem;
+    justify-content: center;
   }
 
-  .standarButton {
+  .containerMyEvents {
+    padding-top: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .nextEvent {
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    font-size: 10px;
+  }
+  .nextEvent > h2 {
+    font-size: 10px;
+  }
+  .nextEvent > h1 {
+    font-size: 10px;
+  }
+  .pastEvent > h2 {
+    margin-right: 20px;
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerMyEvents {
+    margin-bottom: 6px;
+  }
+  .botonesHeader {
+    width: fit-content;
+    margin-left: 31.8rem;
+  }
+
+  .botonesHeader > button {
     font-size: 1.2rem;
   }
-  .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 1.3rem;
-    height: 4rem;
-    text-align: center;
-    width: 14rem;
-    background-size: 40px;
-  }
-  .asideContentIndex {
-    margin: 0;
-    padding-top: 0.5rem;
-  }
-  .contentIndex nav > * {
-    padding-top: 0.4rem;
-    font-size: 1.3rem;
-  } /*h1 busqueda profesionales*/
-  .contentIndex nav {
-    margin: 0 auto;
-  } /*contenido profesionalesfinder*/
-  .contentIndex nav .defaultFormButtonSubmit {
-    margin-left: 0;
-  } /*boton profesionalfinder*/
-
-  .CreateEvent {
-    width: 13rem;
-    margin-left: 2.5rem;
-    padding: 0;
-    height: fit-content;
-  }
-  .CreateEvent div {
-    padding: 0rem;
-  }
-  .CreateEvent div input {
-    width: 11rem;
-  }
-  .CreateEvent .buttonPopUp {
-    font-size: 15px;
-  } /*boton crear evento*/
-  textarea {
-    padding: 0.5rem;
-    max-width: 11rem;
-    max-height: 45px;
-    min-width: 11rem;
-    min-height: 39px;
-
-    margin: 14px;
-    text-align: center;
+  .botonesHeader > a button {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  * {
-    font-size: 22px;
+  .botonesHeader {
+    width: fit-content;
+    margin-left: 47.8rem;
   }
-  .contentIndex {
-    display: flex;
-    min-height: 83.1vh;
-    height: fit-content;
-    padding-top: 1rem;
+  .professionalFinder {
+    width: 27rem;
+    padding-top: 4rem;
   }
-  .headerIndex {
-    max-width: 100%;
-    height: 6rem;
-    justify-content: space-between;
-  }
-  .LogoIndex {
-    width: 137px;
-    height: 124px;
-    margin-left: 3rem;
-    padding-bottom: 0.7rem;
-  }
-
-  .standarButton {
-    font-size: 1.2rem;
-  }
-  . .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 1.3rem;
-    height: 4rem;
-    text-align: center;
-    width: 15rem;
-    background-size: 40px;
-  }
-  .asideContentIndex {
-    margin: 0;
-    padding-top: 0.5rem;
-  }
-  .contentIndex nav > * {
-    padding-top: 0.4rem;
-    font-size: 1.3rem;
-  } /*h1 busqueda profesionales*/
-  .contentIndex nav {
-    margin: 0 auto;
-  } /*contenido profesionalesfinder*/
-  .contentIndex nav .defaultFormButtonSubmit {
-    margin-left: 0;
-  } /*boton profesionalfinder*/
-
-  .CreateEvent {
-    width: 13rem;
-    margin-left: 2.5rem;
-    padding: 0;
-    height: fit-content;
-  }
-  .CreateEvent label {
-    font-size: 1.2rem;
-  }
-  .CreateEvent div {
-    display: flex;
-    padding: 0rem;
-  }
-  .CreateEvent div input {
-    font-size: 1rem;
-    width: 11rem;
-  }
-  .CreateEvent .buttonPopUp {
-    font-size: 1.2rem;
-  } /*boton crear evento*/
-  textarea {
+  .selectProfession,
+  .selectCity,
+  .datePicker {
+    text-align-last: center;
+    min-width: 15rem;
     padding: 0.5rem;
-    max-width: 11rem;
-    max-height: 45px;
-    min-width: 11rem;
-    min-height: 39px;
-
-    margin: 14px;
-    text-align: center;
   }
 }
-@media (min-width: 1265px) {
-  * {
-    font-size: 16px;
-  }
-  .contentIndex {
-    display: flex;
-    min-height: 86.3vh;
-    height: fit-content;
-    padding: 1rem;
-  }
-  .headerIndex {
-    max-width: 100%;
-    height: 3rem;
-    justify-content: space-between;
-  }
-  .LogoIndex {
-    width: 93px;
-    height: 93px;
-    margin-left: 5rem;
-    padding-bottom: 0.3rem;
-  }
 
-  .standarButton {
-    font-size: 1.2rem;
+@media (min-width: 1280px) {
+  .botonesHeader {
+    width: fit-content;
+    margin-left: 63.8rem;
   }
-  . .buttonEventAside,
-  .buttonProfesionalAside,
-  .buttonPaidAside,
-  .buttonsHideAside {
-    font-size: 1.3rem;
-    height: 3rem;
-    text-align: center;
-    width: 1rem;
-    background-size: 40px;
-  }
-
-  .contentIndex nav {
-    margin: 0 auto;
-  } /*contenido profesionalesfinder*/
-  .contentIndex nav .defaultFormButtonSubmit {
-    margin-left: 0;
-  } /*boton profesionalfinder*/
-
-  .CreateEvent {
-    width: 20rem;
-    margin: 0 auto;
-    padding: 0;
-    height: fit-content;
-  }
-  .CreateEvent label {
-    font-size: 1.2rem;
-  }
-  .CreateEvent div {
-    padding: 0rem;
-  }
-  .CreateEvent div input {
-    align-self: center;
-    font-size: 1rem;
-    width: 14rem;
-  }
-  .CreateEvent .buttonPopUp {
-    font-size: 1.2rem;
-  } /*boton crear evento*/
-  textarea {
-    padding: 0.5rem;
-    max-width: 14rem;
-    max-height: 45px;
-    min-width: 14rem;
-    min-height: 39px;
-
-    margin-left: 3rem;
-    text-align: center;
+  .pastEvent {
+    padding-right: 0rem;
+    font-size: 13px;
   }
 }

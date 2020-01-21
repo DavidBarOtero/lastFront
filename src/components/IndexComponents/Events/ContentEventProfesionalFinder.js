@@ -58,6 +58,26 @@ function ContentEventProfesionalFinder() {
     e.preventDefault();
   }
 
+  useEffect(() => {
+    try {
+      axios
+        .get(
+          `${process.env.REACT_APP_BACKEND}/api/professionalfinder/${selectedProfession}/${selectedCity}/${datePicker}`
+        )
+        .then(res => {
+          const result = res.data;
+          console.log(result);
+          setServerResponse(result);
+          console.log(serverResponse);
+          console.log(datePicker);
+        });
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
+  const today = new Date();
+
   return (
     <>
       <form className="professionalFinder" onSubmit={handleSubmit}>
@@ -92,7 +112,7 @@ function ContentEventProfesionalFinder() {
         <div>
           <h4>Fecha</h4>
           <DatePicker
-            selected={datePicker}
+            selected={today > datePicker ? today : datePicker}
             onChange={handleChangeDate}
             dateFormat="yyyy/MM/dd"
             className="datePicker"

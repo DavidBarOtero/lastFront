@@ -6,6 +6,7 @@ import BeautyStars from "beauty-stars";
 
 function Rating(props) {
   const [valueRating, setValueRating] = useState(0);
+  const [rated, setRated] = useState(false);
   const { tokenOk } = useAuth();
   useEffect(() => {
     if (valueRating !== 0) {
@@ -18,16 +19,19 @@ function Rating(props) {
           rate: valueRating
         }
       });
+      setRated(true);
     }
   }, [valueRating]);
 
   return (
     <div>
-      <BeautyStars
-        value={valueRating}
-        size="20px"
-        onChange={valueRating === 0 && (value => setValueRating(value))}
-      />
+      {rated === false && (
+        <BeautyStars
+          value={valueRating}
+          size="20px"
+          onChange={valueRating === 0 && (value => setValueRating(value))}
+        />
+      )}
     </div>
   );
 }

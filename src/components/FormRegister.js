@@ -76,10 +76,10 @@ function FormRegister(props) {
   return (
     <Formik
       initialValues={{
-        name: "hola",
-        lastName: "hol ssdafsdfadsf",
-        email: "d@hotmial.com",
-        password: "klsdajfñlskdjfñslkdjfñslkfj"
+        name: "",
+        lastName: "",
+        email: "",
+        password: ""
       }}
       validationSchema={Schema}
     >

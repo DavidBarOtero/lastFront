@@ -62,16 +62,17 @@ a:hover {
   }
 }
 @media (min-width: 768px) {
-  .aboutPopUp h1 {
-    font-size: 1.8rem;
-  }
   .aboutPopUp p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .aboutPopUp .buttonPopUp {
     font-size: 1.2rem;
   }
   .aboutPopUp {
     width: 22rem;
+  }
+  .aboutPopUp h1 {
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
   }
 }

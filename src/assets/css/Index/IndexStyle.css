@@ -3,6 +3,9 @@
   font: 18px;
   padding-top: 1.5rem;
 }
+.creditDiv {
+  margin-top: 0.5rem;
+}
 .botonesHeader {
   align-items: flex-end;
   margin-left: 62rem;
@@ -14,6 +17,12 @@
   min-width: 10rem;
   padding: 0.5rem;
 }
+.rccs__expiry__value {
+  margin-left: 15rem;
+}
+.rccs__expiry__valid {
+  margin-left: 15rem;
+}
 .professionalFinder {
   width: 25rem;
   margin: 0 auto;
@@ -21,6 +30,17 @@
   flex-direction: column;
   padding-bottom: 2rem;
 }
+.makeStyles-card-358 {
+  max-width: 300px;
+  min-width: 275px;
+  margin: 10px;
+}
+.makeStyles-card-354 {
+  max-width: 300px;
+  min-width: 275px;
+  margin: 10px;
+}
+
 .professionalFinderResult > * {
   padding-bottom: 1rem;
   margin-left: 0.7rem;
@@ -36,6 +56,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
+}
+.makeStyles-card-109 {
+  margin: 10px;
+  max-width: 300px;
+  min-width: 275px;
+}
+.makeStyles-card {
+  max-width: 300px;
+  min-width: 275px;
+  margin: 10px;
 }
 .CreateEvent div {
   display: block;
@@ -82,8 +113,11 @@
   .pastEvent > h2 {
     margin-right: 20px;
     font-size: 8px;
+
+    font-size: 12px;
   }
 }
+
 @media (min-width: 320px) {
   .professionalFinder {
     width: 18rem;
@@ -103,7 +137,8 @@
   }
   .creditCard > button {
     max-width: 14rem;
-    padding-left: 4rem;
+
+    margin: 0 auto;
   }
 
   .containerMyEvents {
@@ -138,6 +173,7 @@
     width: 18rem;
   }
   .eventCardDate {
+    font-size: 12px;
     margin-left: 10px;
   }
   .botonesHeader {
@@ -183,12 +219,26 @@
     width: fit-content;
     margin-left: 31.8rem;
   }
+  .makeStyles-card-314 {
+    max-width: 300px;
+    min-width: 275px;
+    margin: 10px;
+  }
+  .pastEvent {
+    padding-right: 3rem;
+    font-size: 10px;
+  }
 
   .botonesHeader > button {
     font-size: 1.2rem;
   }
   .botonesHeader > a button {
     font-size: 1.2rem;
+  }
+  .makeStyles-card-109 {
+    margin: 10px;
+    max-width: 300px;
+    min-width: 275px;
   }
 }
 @media (min-width: 1024px) {
@@ -209,7 +259,7 @@
   }
   .pastEvent > h2 {
     margin-right: 73px;
-    font-size: 8px;
+    font-size: 14px;
   }
 }
 

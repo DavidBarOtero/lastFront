@@ -5,7 +5,7 @@ import { CoverCard } from "./../components/CoverComponents/CoverCard";
 import { FinderCover } from "./../components/CoverComponents/FinderCover";
 import "./../assets/css/Cover/CoverStyle.css";
 import "./../assets/css/Cover/Forms.css";
-
+import { FooterIndex } from "./../components/IndexComponents/FooterIndex";
 function Cover(props) {
   const [exampleCards, setExampleCards] = useState(true);
 
@@ -42,41 +42,42 @@ function Cover(props) {
         {props.stateFinder === true && (
           <FinderCover displayRegister={props.displayRegister} />
         )}
+
+        {exampleCards && (
+          <div className="exampleCards">
+            <CoverCard
+              onClick={props.displayRegister}
+              className="coverCard"
+              nameProfession="Música"
+              name="Antonio Diaz"
+              description="Clásicos de toda la vida versionados por mi"
+              fee="150"
+              ratingAverage="3.9"
+              ratingTotal="15"
+            />
+            <CoverCard
+              onClick={props.displayRegister}
+              className="coverCard"
+              nameProfession="Catering"
+              name="La Atalaya"
+              description="Déjanos formar parte de tus mejores momentos, haciendo de ellos un dia inolvidable"
+              fee="250"
+              ratingAverage="4.2"
+              ratingTotal="35"
+            />
+            <CoverCard
+              onClick={props.displayRegister}
+              className="coverCard"
+              nameProfession="Fotografía"
+              name="Estela Arroyo"
+              description=" Mi manera de trabajar consiste en orientar, no imponer, hasta así, conseguir lo que realmente estas buscando. "
+              fee="150"
+              ratingAverage="3.9"
+              ratingTotal="15"
+            />
+          </div>
+        )}
       </main>
-      {exampleCards && (
-        <div className="exampleCards">
-          <CoverCard
-            onClick={props.displayRegister}
-            className="coverCard"
-            nameProfession="Música"
-            name="Antonio Diaz"
-            description="Clásicos de toda la vida versionados por mi"
-            fee="150"
-            ratingAverage="3.9"
-            ratingTotal="15"
-          />
-          <CoverCard
-            onClick={props.displayRegister}
-            className="coverCard"
-            nameProfession="Catering"
-            name="La Atalaya"
-            description="Déjanos formar parte de tus mejores momentos, haciendo de ellos un dia inolvidable"
-            fee="250"
-            ratingAverage="4.2"
-            ratingTotal="35"
-          />
-          <CoverCard
-            onClick={props.displayRegister}
-            className="coverCard"
-            nameProfession="Fotografía"
-            name="Estela Arroyo"
-            description=" Mi manera de trabajar consiste en orientar, no imponer, hasta así, conseguir lo que realmente estas buscando. "
-            fee="150"
-            ratingAverage="3.9"
-            ratingTotal="15"
-          />
-        </div>
-      )}
     </>
   );
 }

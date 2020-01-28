@@ -36,7 +36,7 @@ export default class CreditCard extends React.Component {
           number={this.state.number}
         />
         <form className="creditCard">
-          <div>
+          <div className="creditDiv">
             <input
               className="inputCreditCard"
               type="text"

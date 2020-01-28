@@ -60,6 +60,7 @@ function FinderCover(props) {
   function handleSubmit(e) {
     e.preventDefault();
   }
+  const today = new Date();
 
   return (
     <>
@@ -99,7 +100,7 @@ function FinderCover(props) {
         <div>
           <h4>Fecha</h4>
           <DatePicker
-            selected={datePicker}
+            selected={today > datePicker ? today : datePicker}
             onChange={handleChangeDate}
             dateFormat="yyyy/MM/dd"
             className="dataPickerCover"

@@ -96,7 +96,9 @@ export default function SimpleCard(props) {
             <div style={{ display: "flex" }}>
               <h1 style={{ fontSize: "1rem" }}>Valoración: </h1>
               <div> {props.ratingAverage}</div>
-              <div>/{props.ratingTotal} votos</div>
+              <div style={{ paddingRight: " 1.2rem" }}>
+                /{props.ratingTotal} votos
+              </div>
             </div>
           </CardActions>
         </Card>

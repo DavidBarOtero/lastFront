@@ -52,7 +52,7 @@ const CoverCard = props => {
         </Button>
 
         <div style={{ display: "flex" }}>
-          <h1 style={{ fontSize: ".6rem" }}>Valoración </h1>
+          <h1 style={{ fontSize: "1rem", marginRight: "1rem" }}>Valoración </h1>
           <div> {props.ratingAverage}</div>
           <div>/{props.ratingTotal}</div>
         </div>

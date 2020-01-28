@@ -35,18 +35,21 @@ const PopUpCard = props => {
       <p style={{ fontSize: "1.5rem" }}> {props.nameProfession}</p>
       <h1 style={{ fontSize: "2.5rem" }}> {props.name}</h1>
 
-      <p style={{ fontSize: "1.5rem" }}> {props.description}</p>
+      <p style={{ fontSize: "1.3rem" }}> {props.description}</p>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <h1 style={{ fontSize: "1.5rem", paddingTop: ".5rem" }}>Valoración </h1>
         <div style={{ display: "flex", paddingTop: ".5rem" }}>
-          <div style={{ fontSize: "1.5rem" }}> {props.ratingAverage}</div>
-          <div style={{ fontSize: "1.5rem" }}>/{props.ratingTotal}</div>
+          <div style={{ fontSize: "1.5rem" }}>{props.ratingAverage}</div>
+          <div style={{ fontSize: "1.5rem", paddingRight: "4rem" }}>
+            /{props.ratingTotal}
+          </div>
         </div>
         <div
           style={{
             fontSize: "2.5rem",
             alignContent: "center",
-            marginLeft: "3rem"
+            marginLeft: "3rem",
+            color: "#97BF2E"
           }}
         >
           {props.fee}€

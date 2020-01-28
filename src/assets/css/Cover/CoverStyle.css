@@ -5,8 +5,24 @@
 
   box-sizing: border-box;
 }
+.makeStyles-paper-443 {
+  margin-top: 0;
+}
+.makeStyles-paper-1316 {
+  margin-top: 0;
+}
+.makeStyles-card-109 {
+  max-width: 300px;
+  min-width: 150px;
+  margin: 2px;
+}
+.MuiCardActions-root {
+  display: flex;
+  /* padding: 8px; */
+  align-items: center;
+}
 .headerCover {
-  height: 17vh;
+  min-height: 17vh;
 }
 .professionalFinderResult {
   display: flex;
@@ -16,18 +32,6 @@
   flex-wrap: wrap;
 }
 
-.makeStyles-paper-109 {
-  display: flex;
-  /* margin-top: 64px; */
-  align-items: center;
-  flex-direction: column;
-}
-.professionalFinderResult > * {
-  padding-bottom: 1rem;
-  margin-left: 2.7rem;
-  padding: 0.3rem;
-  flex: 1 1 300px;
-}
 .professionalFinderCover {
   margin: 0 auto;
   display: flex;
@@ -38,7 +42,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 21.2rem;
 }
 .professionalFinderCover > div h4 {
   padding: 0.3rem;
@@ -91,7 +94,6 @@
     min-height: 23.6rem;
   }
   .exampleCards {
-    margin-bottom: 4rem;
     flex-direction: column;
   }
   .selectProfessionCover,
@@ -164,14 +166,12 @@
     height: 17vh;
   }
 
-  .MuiContainer-maxWidthXs {
-    padding-bottom: 16.5rem;
-  }
   .professionalFinderCover {
     height: 20rem;
   }
   .mainCover {
-    min-height: 23.6rem;
+    max-height: fit-content;
+    min-height: 100vh;
   }
   .exampleCards {
     flex-direction: row;
@@ -179,8 +179,17 @@
 
     flex-wrap: wrap;
   }
+  .MuiCardActions-root div h1 {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
   .exampleCards > * {
     padding-top: 1rem;
+  }
+  .makeStyles-card-109 {
+    margin: 10px;
+    max-width: 300px;
+    min-width: 275px;
   }
   .selectProfessionCover,
   .dataPickerCover,
@@ -231,9 +240,6 @@
     max-width: 38rem;
   }
 
-  .MuiContainer-maxWidthXs {
-    padding-bottom: 2rem;
-  }
   .exampleCards {
     display: flex;
     flex-direction: row;
@@ -251,7 +257,7 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
-    min-height: 26.6rem;
+    min-height: 100vh;
   }
   .mainCoverOpacity {
     opacity: 0.5;
